@@ -18,7 +18,3 @@ const checkEnv = (envVar, defaultValue) => {
 export const PORT = parseInt(checkEnv('PORT'), 10);
 export const DBURL = checkEnv('DBURL');
 export const CORS_ORIGINS = ['http://localhost:3000'];
-// "dev": "node src/api.js",
-//     "seed": "node src/scripts/seed.js",
-//     "start": "node dist/api.js",
-//     "build": "tsc -b"
