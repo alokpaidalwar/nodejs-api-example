@@ -32,11 +32,10 @@ npm run start
 This is a mock authentication so you can pass in any username or password to login.
  1. Set the request to **POST** and the url to _/api/login_. 
  2. In the **Body** for the Postman request, select **x-www-form-urlencoded**.
- 3. You will be setting 2 keys (for username and password). Set the ```username``` key to any name for studen role and 'admin' for admin role. Set ```password``` to any password.
+ 3. Set two 2 keys- Set the ```username``` key to any name for ```student``` role and 'admin' for ```admin``` role. Set ```password``` to anything.
  4. Hit ```Send```. You will get the token, role and username:
 
-
-### POSTS API's
+### Posts API's
 A. GET all posts by pagination
  1. Set the request to **GET** and the url to _/api/post_.
  2. Pass two query parameters page & perPage. Eg
@@ -85,7 +84,5 @@ E. Update new post
 
 
 ## Unit Testing
-
-Unit testing is done using mochai.
 
 Run ```npm test``` from the application's root directory.
