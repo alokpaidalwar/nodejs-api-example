@@ -1,5 +1,11 @@
 # Nodejs Example API Getting Started
 
+A simple Nodejs project, with three major functionalities -
+
+ * Authentication
+ * Authorization
+ * CRUD operations
+
 ### 1. Clone the repository and install dependencies
 
 ```
