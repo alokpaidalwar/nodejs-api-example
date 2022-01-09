@@ -1,8 +1,7 @@
-const result = require('dotenv').config();
+import dotenv from 'dotenv';
 
-if (result.error) {
-  throw result.error;
-}
+// call the config function
+dotenv.config();
 
 const checkEnv = (envVar, defaultValue) => {
   if (!process.env[envVar]) {
@@ -18,3 +17,4 @@ const checkEnv = (envVar, defaultValue) => {
 export const PORT = parseInt(checkEnv('PORT'), 10);
 export const DBURL = checkEnv('DBURL');
 export const CORS_ORIGINS = ['http://localhost:3000'];
+export const JWT_SECRET = checkEnv('JWT_SECRET');
