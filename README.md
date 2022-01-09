@@ -10,7 +10,7 @@ npm install
 
 ### 2. Configure your local environment
 
-Add mongodb url and jwt secret in .env file
+Add ```mongodb url``` and ```jwt secret``` in .env file
 
 ### 3. Start the application
 
@@ -52,7 +52,7 @@ B. GET a post by id
  ```
  3. Since this is a secure route, for testing, you will have to set the token in the ```Header```. Set key as ```token``` and value as token you received from **Authentication**. 
  
-C. Create new post
+C. Create a post
  1. Set the request to **POST** and the url to _/api/post_.
  2. In the **Body** for the Postman request, select **x-www-form-urlencoded**.
  3. Set the key ```title``` to create post with title. Eg.
@@ -61,7 +61,7 @@ C. Create new post
  ```
  4. Since this is a secure route, for testing, you will have to set the token in the ```Header```. Set key as ```token``` and value as token you received from **Authentication**.
 
-D. Update new post
+D. Update a post
  1. Set the request to **PATCH** and the url to _/api/post/:id_.
  2. In the **Body** for the Postman request, select **x-www-form-urlencoded**.
  3. Set the key ```title``` to create post with title. Eg.
@@ -74,7 +74,7 @@ D. Update new post
  ```
  5. Since this is a secure route, for testing, you will have to set the token in the ```Header```. Set key as ```token``` and value as token you received from **Authentication**.
 
-E. Update new post
+E. Delete a post
  1. Set the request to **DELETE** and the url to _/api/post/:id_.
  2. Url Example
  ```
